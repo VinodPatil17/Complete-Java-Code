@@ -61,7 +61,7 @@ public class vp_84Apna_TrieProb {
             insert(fun);
         }
 
-        //System.out.println(search("apple"));
+        System.out.println(search("apple"));
         System.out.println(countNode(root));
     }
 }
