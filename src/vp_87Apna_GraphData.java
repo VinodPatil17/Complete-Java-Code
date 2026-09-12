@@ -4,10 +4,12 @@ public class vp_87Apna_GraphData{
     static class Edge{
         int src;  //starting pt
         int dst;  //destination
+        int wgh;  //weight
 
-        public Edge(int s, int d){
+        public Edge(int s, int d, int w){
             this.src = s;
             this.dst = d;
+            this.wgh = w;
         }
     }
 
@@ -18,17 +20,17 @@ public class vp_87Apna_GraphData{
             graph[i] = new ArrayList<Edge>();
         }
 
-        graph[0].add(new Edge(0,2));
+        graph[0].add(new Edge(0,2, 2));
 
-        graph[2].add(new Edge(2,3));
-        graph[2].add(new Edge(2,0));
-        graph[2].add(new Edge(2,1));
+        graph[2].add(new Edge(2,3,10));
+        graph[2].add(new Edge(2,0,10));
+        graph[2].add(new Edge(2,1,-1));
 
-        graph[1].add(new Edge(1,3));
-        graph[1].add(new Edge(1,2));
+        graph[1].add(new Edge(1,3, 5));
+        graph[1].add(new Edge(1,2,3));
 
-        graph[3].add(new Edge(3,1));
-        graph[3].add(new Edge(3,2));
+        graph[3].add(new Edge(3,1,6));
+        graph[3].add(new Edge(3,2,23));
 
     }
 
