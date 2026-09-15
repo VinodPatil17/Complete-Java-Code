@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 public class vp_90Apna_GraphDFS {
 
-    static class Edge{
+    static class Edge {
         int src;
         int dst;
 
-        public Edge(int s, int d){
+        public Edge(int s, int d) {
             this.src = s;
             this.dst = d;
         }
