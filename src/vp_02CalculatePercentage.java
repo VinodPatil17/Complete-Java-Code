@@ -25,6 +25,5 @@ public class vp_02CalculatePercentage {
         int percentage = (sum * 100)/ 600;
 
         System.out.println("The total percentage is "+percentage+"%");
-        System.out.println();
     }
 }
